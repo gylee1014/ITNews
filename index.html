@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IT 뉴스 검색기</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #search-container {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .news-item {
+      background-color: #fff;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .news-item img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+
+    .news-item h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .news-item p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 IT 뉴스 검색기</h1>
+  <div id="search-container">
+    <input type="text" id="keyword" placeholder="검색어를 입력하세요 (예: 삼성, AI 등)" />
+    <button onclick="searchNews()">검색</button>
+  </div>
+  <div id="news-container">📰 최신 뉴스가 여기에 표시됩니다.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
